@@ -1,13 +1,27 @@
 <template>
-  <div>
+  <b-container fluid>
+    <b-navbar toggleable="sm" type="dark" variant="dark">
+      <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
+
+      <b-navbar-brand>DevThings</b-navbar-brand>
+
+      <b-navbar-nav is-nav class="ml-auto">
+        <b-nav-item href="/">Inicio</b-nav-item>
+      </b-navbar-nav>
+    </b-navbar>
     <nuxt />
-  </div>
+    <div class="text-center m-3">
+      <a href="http://robertonunezc.com" target="_blank"
+        >Hecho por MI con NuxtJS y StrapiJS</a
+      >
+    </div>
+  </b-container>
 </template>
 
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
